@@ -1,0 +1,9 @@
+#Start the dev cluster on the local machine
+Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Force -Scope CurrentUser
+cd "$env:ProgramFiles\Microsoft SDKs\Service Fabric\ClusterSetup"
+./DevClusterSetup.ps1
+
+#Start the service fabric explorer
+cd "$env:ProgramFiles\Microsoft SDKs\Service Fabric\Tools\ServiceFabricExplorer"
+./ServiceFabricExplorer.exe
+
